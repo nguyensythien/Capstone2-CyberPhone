@@ -1,0 +1,72 @@
+body{
+    background-image: url(https://4kwallpapers.com/images/wallpapers/harmonyos-3d-render-2560x1080-12645.png);
+    background-size:auto;
+    background-repeat: no-repeat;
+    #cyberPhone__Main{
+        margin: 0 auto;
+        text-align: center;
+        a{
+            padding: 2px 5px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-top: 100px;
+            transition: all .2s;
+        }
+        & a:hover{
+            border: 2px solid white;
+            border-radius: 5px ;
+            font-size: 22px;
+        }
+        & #cyberPhone__Filter{
+            display: inline-block;
+            margin: 20px 100px;
+        }
+    }
+}
+
+#proFilter{
+
+    color: white;
+    background: none;
+    border: none;
+    & option{
+        color: black;
+        background: none;
+        border: none;
+}
+}
+#filter-Btn{
+    padding: 2px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    margin-top: 100px;
+    transition: all .2s;
+    background: none;
+    border: none;
+}
+#filter-Btn:hover{
+    border: 2px solid white;
+    border-radius: 5px ;
+    font-size: 22px;
+}
+
+
+
+#open-Btn{
+    padding: 2px 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 100px;
+    transition: all .2s;
+    background: none;
+    border: none;
+    margin-left: 50px;
+}
+#open-Btn:hover{
+    border: 2px solid white;
+    border-radius: 5px ;
+    font-size: 20px;
+}

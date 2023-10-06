@@ -1,0 +1,241 @@
+body {
+  background-image: url(https://4kwallpapers.com/images/wallpapers/harmonyos-3d-render-2560x1080-12645.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+body #cyberPhone__Main {
+  margin: 0 auto;
+  text-align: center;
+}
+body #cyberPhone__Main a {
+  padding: 2px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 100px;
+  transition: all 0.2s;
+}
+body #cyberPhone__Main a:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 22px;
+}
+body #cyberPhone__Main #cyberPhone__Filter {
+  display: inline-block;
+  margin: 20px 100px;
+}
+
+#proFilter {
+  color: white;
+  background: none;
+  border: none;
+}
+#proFilter option {
+  color: black;
+  background: none;
+  border: none;
+}
+
+#filter-Btn {
+  padding: 2px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 100px;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+}
+
+#filter-Btn:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 22px;
+}
+
+#open-Btn {
+  padding: 2px 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  margin-top: 100px;
+  transition: all 0.2s;
+  background: none;
+  border: none;
+  margin-left: 50px;
+}
+
+#open-Btn:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#cyberPhone__Cart {
+  padding: 20px;
+  border: 5px solid yellow;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  width: 70%;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+}
+#cyberPhone__Cart .cart__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cyberPhone__Cart .cart__top h3 {
+  color: white;
+  font-size: 50px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+#cyberPhone__Cart .cart__top button {
+  border: none;
+  background: none;
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 40px;
+  transition: all 0.2s;
+}
+#cyberPhone__Cart .cart__top button:hover {
+  font-size: 30px;
+}
+
+.cart__PrList {
+  border-bottom: 1px dotted rgb(210, 209, 209);
+  padding: 10px;
+}
+.cart__PrList #td__img img {
+  width: 80%;
+}
+.cart__PrList #td__ProName {
+  color: white;
+}
+.cart__PrList #td__Number {
+  color: white;
+  display: flex;
+}
+.cart__PrList #td__Number button {
+  color: white;
+  border: none;
+  background: none;
+  width: 20px;
+  height: 20px;
+}
+.cart__PrList #td__Number button:hover {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+.cart__PrList #td__Price {
+  color: white;
+}
+.cart__PrList #td__Del button {
+  border: none;
+  background: none;
+  color: white;
+  transition: all 0.2s;
+}
+.cart__PrList #td__Del button:hover {
+  color: red;
+  border: 1px solid red;
+  padding: 3px 6px;
+}
+
+.cart__bot #cartTotal h3 {
+  color: white;
+  text-align: right;
+  padding-right: 100px;
+}
+.cart__bot .purchase {
+  text-align: right;
+  margin: 20px 20px 30px 50px;
+}
+.cart__bot .purchase button {
+  margin-left: 20px;
+  color: white;
+  border: 2px solid white;
+  background: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+.cart__bot .purchase button:first-child:hover {
+  color: green;
+  border: 3px solid green;
+}
+.cart__bot .purchase button:last-child:hover {
+  color: rgb(207, 29, 29);
+  border: 3px solid rgb(207, 29, 29);
+}
+
+#cyberPhone__Shop {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+#cyberPhone__Shop .cyberPhone__Card {
+  background: none;
+  border: 2px solid white;
+  border-radius: 7px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 5px;
+  width: 20%;
+}
+#cyberPhone__Shop .cyberPhone__Card .topLogo {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  line-height: 1rem;
+  padding-top: 0.5rem;
+}
+#cyberPhone__Shop .cyberPhone__Card img {
+  width: 90%;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail {
+  text-align: left;
+  padding: 10px;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Name {
+  margin-top: 10px;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Name h4 {
+  font-size: 20px;
+  color: white;
+  font-weight: 700;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Caption h5 {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Desc h6 {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Bot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Bot .bot__Price p {
+  margin: 0;
+  color: white;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Bot button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+#cyberPhone__Shop .cyberPhone__Card .detail .detail__Bot button:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 20px;
+}/*# sourceMappingURL=main.css.map */

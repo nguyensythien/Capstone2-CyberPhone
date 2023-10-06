@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- FONT FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
+    rel="stylesheet">
+
+
+  <!-- MAIN CSS -->
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <!-- ----------NAVIGATION BAR---------- -->
+  <nav class="navbar navbar-expand-sm  navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">Mobile World</a>
+    <div class="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./cyber_phone_shop/CyberPhone__Shop/index__shop.html">Shop</a>
+        </li>
+      </ul>
+    </div>
+    <div class="search">
+      <input type="search" value="" placeholder="Search Product Here">
+    </div>
+  </nav>
+<br><br><br><br><br><br>
+<section class="admin__Body">
+  <!-- ----------PRODUCT TABLE---------- -->
+  <div class="product__table table-responsive">
+    <button onclick="openProductForm()" id="btnThem" type="button" class="btn btn-warning mb-3 text-white" >
+    Thêm Sản Phẩm
+  </button>
+    <table class="table table-striped table-sm tablePhone">
+      <thead>
+        <tr class=" text-white theaderPhone">
+          <th>ID</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Screen</th>
+          <th>BackCamera</th>
+          <th>FrontCamera</th>
+          <th>Img</th>
+          <th>Desc</th>
+          <th>Type</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody id="tbodyPhone">
+      </tbody>
+    </table>
+  </div>
+
+  <!------------ ADD PRODUCT FORM------------>
+  <div class="fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    style="display: none;" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thêm Sản Phẩm</h5>
+          <button onclick="closeProductForm()" type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form class="needs-validation" id="ProductForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label >ID</label>
+                <input type="text" class="form-control" id="productID" placeholder="Nhập ID" value="" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label >Name</label>
+                <input type="text" class="form-control" id="productName" placeholder="Nhập tên sản phẩm" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label >Price</label>
+                <input type="text" class="form-control" id="productPrice" placeholder="Nhập giá" value="" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label >Screen</label>
+                <input type="text" class="form-control" id="productScreen" placeholder="Nhập Kích Thước Màn Hình"
+                  value="" required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label >Back Camera</label>
+                <input type="text" class="form-control" id="productBCamera" placeholder="Thông số camera sau" value=""
+                  required="">
+              </div>
+              <div class="col-md-6 mb-3">
+                <label >Font Camera</label>
+                <input type="text" class="form-control" id="productFCamera" placeholder="Thông số camera trước" value=""
+                  required="">
+
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group">
+
+                <label >Product IMG</label>
+                <input type="text" class="form-control" id="productImg" placeholder="Nhập link hình ảnh" value=""
+                  required="">
+              </div>
+              <div class="mb-3">
+                <div class="form-group">
+                  <label >Product Type</label>
+                  <select class="custom-select" id="productType">
+                    <option value="" selected>Chọn loại</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="Iphone">Iphone</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label >Product Desc</label>
+                <textarea class="form-control" id="productDesc" rows="3"></textarea>
+              
+              </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="closeProductForm()">Close</button>
+          <button type="button" class="btn btn-warning" id="btnCapNhat" onclick="productUpdate()">Cập Nhật</button>
+          <button type="button" class="btn btn-warning" id="btnThemMon" onclick="productAddition()">Thêm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- ---------   ADD AXIOS   ----------- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"
+    integrity="sha512-aoTNnqZcT8B4AmeCFmiSnDlc4Nj/KPaZyB5G7JnOnUEkdNpCZs1LCankiYi01sLTyWy+m2P+W4XM+BuQ3Q4/Dg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- ---------  ADD MAIN JS  ----------- -->
+    <script src="./js/validation/validation.js"></script>
+    <script src="./js/models/product.js"></script>
+    <script src="./js/services/services.js"></script>
+    <script src="./js/controllers/controller.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

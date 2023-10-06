@@ -1,0 +1,114 @@
+#cyberPhone__Cart {
+    padding: 20px;
+    border: 5px solid yellow;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+
+    & .cart__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h3 {
+            color: white;
+            font-size: 50px;
+            font-weight: 900;
+            margin-left: 20px;
+        }
+
+        button {
+            border: none;
+            background: none;
+            color: white;
+            width: 30px;
+            height: 30px;
+            margin-bottom: 40px;
+            transition: all .2s;
+        }
+
+        & button:hover {
+            font-size: 30px;
+        }
+    }
+}
+
+
+.cart__PrList{
+    border-bottom: 1px dotted rgb(210, 209, 209);
+    padding: 10px;
+        & #td__img{
+            img{
+                width: 80%;
+            }
+        }
+        & #td__ProName{
+            color: white;
+        }
+        & #td__Number{
+            color: white;
+            display: flex;
+            & button{
+                color: white;
+                border: none;
+                background: none;
+                width: 20px;
+                height: 20px;
+            }
+            & button:hover{
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+            }
+        }
+        & #td__Price{
+            color: white;
+        }
+        & #td__Del{
+            button{
+                border: none;
+                background: none;
+                color: white;
+                transition: all .2s;
+            }
+            & button:hover{
+                color: red;
+                border: 1px solid red;
+                padding: 3px 6px;
+            }
+        }
+}
+
+
+.cart__bot{
+    & #cartTotal{
+        h3{
+            color: white;
+            text-align: right;
+            padding-right: 100px;
+        }
+    }
+    & .purchase{
+        text-align: right;
+        margin: 20px 20px 30px 50px;
+        button{
+            margin-left: 20px;
+            color: white;
+            border: 2px solid white;
+            background: none;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        & button:first-child:hover{
+            color: green;
+            border: 3px solid green;
+        }
+        & button:last-child:hover{
+            color: rgb(207, 29, 29);
+            border: 3px solid rgb(207, 29, 29);
+        }
+    }
+}

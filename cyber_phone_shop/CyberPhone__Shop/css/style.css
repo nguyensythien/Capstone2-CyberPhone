@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+button:focus{
+    outline: none;
+}
+/* shop */
+
+#cyberPhone__Shop{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.cyberPhone__Card{
+    width: 20%;
+    height: 450px;
+    /* background-color: brown; */
+    padding: 10px;
+    margin: 150px auto;
+    border: 2px solid black;
+}
+.topLogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 5px;
+}
+.infor p{
+margin: 0;
+}
+.img{
+    padding: 0 12px;
+}
+.img img{
+    width: 250px;
+}
+
+.detail__Bot{
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+}
+
+
+/* cart */
+
+#cyberPhone__Cart{
+    width: 80%;
+    height: 500px;
+    background-color: black;
+    padding: 20px;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cart__top{
+    display: flex;
+    justify-content: space-between;
+}
+.cart__top h3{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+.cart__top button{
+    background: none;
+    border: none;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+#td__img img{
+    width: 100px;
+}
+
+.cart__PrList{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#td__Number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#td__Number p{
+    margin: auto 5px;
+}
+#td__Number button{
+    background: none;
+    color: #fff;
+    border: none;
+}
+
+#td__Del button{
+    background: none;
+    color: #fff;
+    border: none;
+}
+.cart-style p{
+    color: #fff;
+}
+
+.cart__bot h3{
+    font-size: 40px;
+    color: #fff;
+}
+.purchase button{
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background: none;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+

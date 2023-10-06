@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: "Nunito Sans", "sans-serif", "Poppins";
+}
+
+.navbar-expand-sm {
+  justify-content: space-around;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+nav .navbar-brand {
+  font-size: 40px;
+}
+nav .search input {
+  background: none;
+  border: 2px solid white;
+  color: #fff;
+  text-align: center;
+}
+nav .menu {
+  float: right;
+}
+nav .menu ul li a {
+  margin: 0 40px;
+  font-size: 20px;
+  color: #fff !important;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+nav .menu ul li a:hover {
+  color: #fff;
+  border: 2px solid white;
+  font-size: 23px;
+}
+nav .search input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+body {
+  background-image: url(https://4kwallpapers.com/images/wallpapers/harmonyos-3d-render-2560x1080-12645.png);
+}
+
+.admin__Body {
+  display: flex;
+  justify-content: center;
+}
+.admin__Body .product__table {
+  width: 80%;
+  margin-right: 10px;
+  border: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.admin__Body .product__table button {
+  margin: 0 40px;
+  font-size: 20px;
+  color: #fff !important;
+  border: 1px solid white;
+  border-radius: 10px;
+  background: none;
+}
+.admin__Body .product__table button:hover {
+  color: #fff;
+  border: 2px solid white;
+  font-size: 23px;
+}
+.admin__Body .product__table .tablePhone {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#tbodyPhone tr th {
+  border: 2px dotted #ffffff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.theaderPhone th {
+  text-align: center;
+  font-size: 20px;
+}
+
+#exampleModal {
+  display: none;
+  position: absolute;
+}/*# sourceMappingURL=main.css.map */

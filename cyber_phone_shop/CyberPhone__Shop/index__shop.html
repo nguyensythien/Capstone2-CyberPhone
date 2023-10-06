@@ -33,7 +33,7 @@
             <p style="color: red;"> Vui lòng chọn hãng điện thoại</p>
         </div>
         <button id="filter-Btn" onclick="cyberPhone__Fill()">Fill</button>
-        <button id="open-Btn" onclick="turnOnCart()"><i class="fa fa-cart-arrow-down"></i></button>
+        <button id="open-Btn" onclick="turnOnCart()"><i class="fa fa-cart-arrow-down"></i><span class="ml-2" style="color: green; font-size: 20px; font-weight: 500">0</span></button>
         <div id="cyberPhone__Shop">
 
 
@@ -42,14 +42,13 @@
 
         <!-- ----START CART---- -->
         <div id="cyberPhone__Cart" style="display: none;">
-
             <div class="cart__top">
                 <h3 class="cart__name">CART</h3>
                 <button onclick="turnOffCart()"><i class="fa fa-times"></i></button>
             </div>
             <div id="cart__bodyID" class="cart__body">
 
-
+            </div>
             <div class="cart__bot">
                 <div id="cartTotal">
                     <h3>Total</h3>
@@ -61,27 +60,25 @@
             </div>
         </div>
         <!-- ----END CART---- -->
-    </div>
+        <!-- ---------------------------------------- -->
 
-    <!-- ---------------------------------------- -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Axios -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.js"
-        integrity="sha512-iC0CGhwGwgIjo7pRPE2dDC98S2YFB4Y6sJjOfto+gvz7pTljj9KWy2/Ad28xgMQDfT05HJeKb7JN7dXJDnKCVA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Main JS -->
-    <script type="module" src="./js/main__shop.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <!-- Axios -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.js"
+            integrity="sha512-iC0CGhwGwgIjo7pRPE2dDC98S2YFB4Y6sJjOfto+gvz7pTljj9KWy2/Ad28xgMQDfT05HJeKb7JN7dXJDnKCVA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Main JS -->
+        <script type="module" src="./js/main__shop.js"></script>
 </body>
 
 </html>

@@ -209,6 +209,7 @@ const getCartItemList = ()=>{
         .then((result) => {
             renderCartTable(result.data)
             cartTotal(result.data)
+            itemCoutn(result.data)
         })
         .catch((err) => {
             console.log(err);
@@ -255,13 +256,20 @@ const renderCartTable = (dataRender) => {
 
 const cartTotal = (mathData)=>{
     let total = 0
-    mathData.forEach((data)=>{
+    mathData.forEach((data, index)=>{
         total += data.price
     })
     console.log(total);
     getElm('#cartTotal').innerHTML =`<h3>Total ${total}</h3>`
 }
 
+const itemCoutn = (countData) =>{
+    let count = 0
+    countData.forEach((data,index)=>{
+        count = index + 1
+    })
+    getElm('#open-Btn').innerHTML=`<i class="fa fa-cart-arrow-down"></i><span class="ml-2" style="color: green; font-size: 20px; font-weight: 500">${count}</span>`
+}
 // ----------------DELETE PRODUCT AWAY FROM CART-----------------
 
 window.delProFrCart = (id) =>{

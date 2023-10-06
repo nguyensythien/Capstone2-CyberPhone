@@ -20,11 +20,19 @@ nav {
 nav .navbar-brand {
   font-size: 40px;
 }
+nav .search {
+  display: flex;
+}
 nav .search input {
   background: none;
   border: 2px solid white;
   color: #fff;
   text-align: center;
+}
+nav .search button {
+  background: none;
+  color: white;
+  padding: 0 10px;
 }
 nav .menu {
   float: right;
@@ -39,12 +47,7 @@ nav .menu ul li a {
 nav .menu ul li a:hover {
   color: #fff;
   border: 2px solid white;
-  font-size: 23px;
-}
-nav .search input {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+  font-size: 21px;
 }
 
 body {
@@ -75,7 +78,6 @@ body {
 .admin__Body .product__table button:hover {
   color: #fff;
   border: 2px solid white;
-  font-size: 23px;
 }
 .admin__Body .product__table .tablePhone {
   border-radius: 10px;

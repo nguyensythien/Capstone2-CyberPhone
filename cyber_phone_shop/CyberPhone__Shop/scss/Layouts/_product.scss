@@ -1,7 +1,8 @@
+
 #cyberPhone__Shop{
     display: flex;
     justify-content: center;
-    margin-bottom: 200px;
+    margin: 10px 0 200px 0;
 .cyberPhone__Card{
     background: none;
     border: 2px solid white;
@@ -9,7 +10,7 @@
     box-sizing: border-box;
     overflow: hidden;
     margin: 5px;
-    
+    width: 100%;
     & .topLogo{
         color: white;
         display: flex;
@@ -17,7 +18,7 @@
         line-height: 1rem;
         padding-top: .5rem;
     }
-    width: 20%;
+    
     & img{
         width: 90%;
     }
@@ -73,3 +74,4 @@
     }
 }
 }
+

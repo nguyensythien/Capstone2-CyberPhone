@@ -1,10 +1,13 @@
 body{
     background-image: url(https://4kwallpapers.com/images/wallpapers/harmonyos-3d-render-2560x1080-12645.png);
     background-size:auto;
-    background-repeat: no-repeat;
+    background-repeat:repeat-y;
+    text-align: center;
+    display: flex;
     #cyberPhone__Main{
         margin: 0 auto;
         text-align: center;
+        width: 80%;
         a{
             padding: 2px 5px;
             text-decoration: none;

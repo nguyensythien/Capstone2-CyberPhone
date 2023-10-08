@@ -20,24 +20,23 @@
 
     <!-- ---------------------------------------- -->
     <div id="cyberPhone__Main">
-        <a href="/index.html">Admin</a>
+        <div id="phoneHeader">
         <!-- ----START CARD---- -->
+        <a href="/index.html">Admin</a>
         <div id="cyberPhone__Filter">
             <select id="proFilter" class="form-select" aria-label="Default select example">
-                <option value="1" selected>Chọn hãng điện thoại</option>
+                <option value="1" selected>Tất cả</option>
                 <option value="Iphone">Iphone</option>
                 <option value="Samsung">Samsung</option>
             </select>
         </div>
-        <div style="display: none;" id="alert__choses">
-            <p style="color: red;"> Vui lòng chọn hãng điện thoại</p>
-        </div>
         <button id="filter-Btn" onclick="cyberPhone__Fill()">Fill</button>
-        <button id="open-Btn" onclick="turnOnCart()"><i class="fa fa-cart-arrow-down"></i><span class="ml-2" style="color: green; font-size: 20px; font-weight: 500">0</span></button>
-        <div id="cyberPhone__Shop">
+        <button id="open-Btn" onclick="turnOnCart()"><i class="fa fa-cart-arrow-down"></i><span id="count" class="ml-2" style="color: green; font-size: 20px; font-weight: 500">0</span></button>
+        <div id="cyberPhone__Shop" class="row">
 
 
         </div>
+    </div>
         <!-- ----END CARD---- -->
 
         <!-- ----START CART---- -->
@@ -51,14 +50,15 @@
             </div>
             <div class="cart__bot">
                 <div id="cartTotal">
-                    <h3>Total</h3>
+                    <h3>Total: <span id="total">0</span></h3>
                 </div>
                 <div class="purchase">
-                    <button id="btnPurchase">Purchase</button>
-                    <button onclick="clearCart1()" id="btnClear">Clear Cart</button>
+                    <button id="btnPurchase" onclick="clearance()">Purchase</button>
+                    <button id="btnClear" onclick="clearance()">Clear Cart</button>
                 </div>
             </div>
         </div>
+    </div>
         <!-- ----END CART---- -->
         <!-- ---------------------------------------- -->
 

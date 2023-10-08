@@ -1,11 +1,14 @@
 body {
   background-image: url(https://4kwallpapers.com/images/wallpapers/harmonyos-3d-render-2560x1080-12645.png);
   background-size: auto;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
+  text-align: center;
+  display: flex;
 }
 body #cyberPhone__Main {
   margin: 0 auto;
   text-align: center;
+  width: 80%;
 }
 body #cyberPhone__Main a {
   padding: 2px 5px;
@@ -73,13 +76,11 @@ body #cyberPhone__Main #cyberPhone__Filter {
 
 #cyberPhone__Cart {
   padding: 20px;
-  border: 5px solid yellow;
+  border: 5px solid rgb(255, 255, 255);
   border-radius: 20px;
-  background-color: rgb(0, 0, 0);
-  width: 70%;
-  position: absolute;
-  top: 20px;
-  left: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  margin-top: 20px;
 }
 #cyberPhone__Cart .cart__top {
   display: flex;
@@ -107,10 +108,10 @@ body #cyberPhone__Main #cyberPhone__Filter {
 
 .cart__PrList {
   border-bottom: 1px dotted rgb(210, 209, 209);
-  padding: 10px;
+  padding: 0px 10px;
 }
 .cart__PrList #td__img img {
-  width: 80%;
+  width: 60%;
 }
 .cart__PrList #td__ProName {
   color: white;
@@ -118,6 +119,7 @@ body #cyberPhone__Main #cyberPhone__Filter {
 .cart__PrList #td__Number {
   color: white;
   display: flex;
+  justify-content: center;
 }
 .cart__PrList #td__Number button {
   color: white;
@@ -146,13 +148,15 @@ body #cyberPhone__Main #cyberPhone__Filter {
   padding: 3px 6px;
 }
 
+.cart__bot {
+  text-align: center;
+}
 .cart__bot #cartTotal h3 {
   color: white;
-  text-align: right;
-  padding-right: 100px;
+  text-align: center;
 }
 .cart__bot .purchase {
-  text-align: right;
+  text-align: center;
   margin: 20px 20px 30px 50px;
 }
 .cart__bot .purchase button {
@@ -175,7 +179,7 @@ body #cyberPhone__Main #cyberPhone__Filter {
 #cyberPhone__Shop {
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
+  margin: 10px 0 200px 0;
 }
 #cyberPhone__Shop .cyberPhone__Card {
   background: none;
@@ -184,7 +188,7 @@ body #cyberPhone__Main #cyberPhone__Filter {
   box-sizing: border-box;
   overflow: hidden;
   margin: 5px;
-  width: 20%;
+  width: 100%;
 }
 #cyberPhone__Shop .cyberPhone__Card .topLogo {
   color: white;

@@ -80,6 +80,7 @@ body {
   border: 2px solid white;
 }
 .admin__Body .product__table .tablePhone {
+  overflow: hidden;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0);
 }

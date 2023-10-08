@@ -279,7 +279,6 @@ window.delProFrCart = (id) =>{
     })
     promise
     .then((result)=>{
-        console.log(result);
         getCartItemList()
     })
     .catch((err)=>{
@@ -294,4 +293,39 @@ window.turnOffCart = () =>{
 }
 window.turnOnCart = () =>{
     getElm('#cyberPhone__Cart').style.display = 'block'
+}
+
+
+// CLEAR PRODUCT CART
+
+window.clearCart1 = ()=>{
+    const promise = axios({
+        method: 'GET',
+        url: `https://651d71e144e393af2d59cdfb.mockapi.io/cartItem`
+    })
+    promise
+    .then((result)=>{
+        console.log(result),
+        getCartItemList()
+
+    })
+    .catch((err)=>{
+        console.log(err);
+    })
+}
+
+
+
+
+const clearAllProduct = (id) =>{
+    const promise = axios({
+        method: 'DELETE',
+        url: `https://651d71e144e393af2d59cdfb.mockapi.io/cartItem/${id}`
+    })
+    promise
+    .then((result)=>{
+    })
+    .catch((err)=>{
+        
+    })
 }
